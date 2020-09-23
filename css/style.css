@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(0, 100, 100);
+  line-height: 1.5;
+  height: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  width: auto;
+  max-width: 100%;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+
+/***** INDEX PAGE *****/
+.menu-btn {
+  position: fixed;
+  z-index: 3;
+  right: 35px;
+  top: 35px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.menu-btn .btn-line {
+  width: 30px;
+  height: 3px;
+  margin: 0 0 5px 0;
+  background: #ff7400;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.menu-btn.close {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.menu-btn.close .btn-line:nth-child(1) {
+  -webkit-transform: rotate(45deg) translate(5px, 5px);
+          transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-btn.close .btn-line:nth-child(2) {
+  opacity: 0;
+}
+.menu-btn.close .btn-line:nth-child(3) {
+  -webkit-transform: rotate(-45deg) translate(7px, -6px);
+          transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: hidden;
+}
+.menu.show {
+  visibility: visible;
+  overflow: hidden;
+}
+
+.menu-branding, .menu-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  float: left;
+  width: 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.menu-nav {
+  font-family: 'Fredoka One', cursive;
+  margin: 0;
+  padding: 0;
+  background: rgba(0, 0, 0, 0.5);
+  list-style: none;
+  -webkit-transform: translate3d(0, -100%, 0);
+          transform: translate3d(0, -100%, 0);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+.menu-nav.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+.menu-branding {
+  background: rgba(0, 100, 100, 0.8);
+  -webkit-transform: translate3d(0, 100%, 0);
+          transform: translate3d(0, 100%, 0);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.menu-branding.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu .nav-item {
+  -webkit-transform: translate3d(600px, 0, 0);
+          transform: translate3d(600px, 0, 0);
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.menu .nav-item.show {
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+}
+
+.menu .nav-item.active > a {
+  color: #ff6200;
+}
+
+.menu .nav-link {
+  display: inline-block;
+  position: relative;
+  font-size: 23px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease-out;
+  transition: all 0.4s ease-out;
+}
+
+.menu .nav-link:hover {
+  color: #ff6200;
+}
+
+.nav-item:nth-child(1) {
+  -webkit-transition-delay: 0.2s;
+          transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.4s;
+          transition-delay: 0.4s;
+}
+
+.nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.6s;
+          transition-delay: 0.6s;
+}
+
+.nav-item:nth-child(4) {
+  -webkit-transition-delay: 0.8s;
+          transition-delay: 0.8s;
+}
+
+header#navbar {
+  /*position: fixed;
+  z-index: 2;
+  width: 100%;*/
+}
+
+main {
+  padding: 4rem;
+  min-height: calc(100vh - 60px);
+  background: #2a2a40;
+}
+
+h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  font-size: 3.5rem;
+}
+
+h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  font-family: 'Barlow Condensed', sans-serif;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  padding: 0.2rem 1rem;
+  background: rgba(0, 128, 128, 0.5);
+  color: #fff;
+  font-size: 1.8rem;
+  border-radius: 10px;
+}
+.lg-heading span {
+  color: #ff6200;
+}
+main .icons {
+  margin-top: 2rem;
+}
+main .icons a {
+  margin-right: 2rem;
+}
+main .icons a:hover {
+  color: #ff6200;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+main.welcome-section {
+  overflow: none;
+}
+main.welcome-section h1 {
+  margin-top: 20vh;
+}
+.main-footer {
+  font-family: 'Barlow Condensed', sans-serif;
+  text-align: center;
+  padding: 1rem;
+  height: 60px;
+  bottom: 0;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+/***** END OF INDEX PAGE *****/
+
+
+
+/***** ABOUT PAGE *****/
+/***** END OF ABOUT PAGE *****/
+
+
+
+/***** MEDIA QUERY *****/
+@media screen and (max-width: 875px) {
+  main {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  main .lg-heading {
+    line-height: 1;
+    margin-bottom: 1rem;
+  }
+  ul.menu-nav, div.menu-branding {
+    width: 100%;
+    min-height: 0;
+    height: 50vh;
+  }
+  ul.menu-nav.show, div.menu-branding.show {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  .menu-nav {
+    height: 70vh;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    font-size: 20px;
+    background: rgb(0, 100, 100);
+  }
+  .menu-branding {
+    height: 30vh;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+  .menu-branding .portrait img {
+    /*background: url("../img/me-small.png");*/
+    background-size: cover;
+    height: 40vh;
+    border-radius: 15px;
+  }
+
+  main .icons a {
+    margin-right: 1rem;
+  }
+
+  /*.projects {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }*/
+}
