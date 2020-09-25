@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
 * {
   -webkit-box-sizing: border-box;
@@ -10,6 +11,7 @@ body {
   background-color: rgb(0, 100, 100);
   line-height: 1.5;
   height: 100%;
+  color: #fff;
 }
 
 h1, h2, h3 {
@@ -194,7 +196,7 @@ h1.sm-heading, h2.sm-heading, h3.sm-heading {
   font-size: 1.8rem;
   border-radius: 10px;
 }
-.lg-heading span {
+main .orange {
   color: #ff6200;
 }
 main .icons {
@@ -219,17 +221,57 @@ main.welcome-section h1 {
 .main-footer {
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
+  color: #000;
   padding: 1rem;
   height: 60px;
   bottom: 0;
-  font-size: 1.6rem;
-  font-weight: bold;
+  font-size: 1.2rem;
 }
 /***** END OF INDEX PAGE *****/
 
 
 
 /***** ABOUT PAGE *****/
+.about-info {
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 25px;
+  /*-ms-grid-columns: 1fr;*/
+      /*grid-template-columns: 1fr;*/
+}
+.about-info .bioimage {
+  background: url('../img/me5.jpg');
+  background-size: cover;
+  margin: auto;
+  width: 199px;
+  height: 225px;
+  max-width: 100%;
+  border-radius: 20px; 
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+}
+.about-info .resume a {
+  background-color: rgb(0, 100, 100);
+  border-radius: 5px;
+  padding: 5px;
+  text-decoration: none;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+} 
+.about-info .resume a:hover {
+  color: #fff;
+}
+.about-info .bio h5 {
+  font-family: 'Rubik', sans-serif;
+  font-size: 1.2rem;
+  font-weight: normal;
+}
+.about-info .lang-and-tools {
+  background-color: rgba(0, 100, 100, 0.5);
+  padding: 5px 10px;
+  border-radius: 5px;
+  border-bottom: solid 3px #ff6200;
+  max-width: 100%;
+}
 /***** END OF ABOUT PAGE *****/
 
 
@@ -245,6 +287,16 @@ main.welcome-section h1 {
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
+    font-size: 2.3rem;
+  }
+  main .sm-heading {
+    font-size: 1.6rem;
+  }
+  .about-info .bio h5 {
+    font-size: 1rem;
+  }
+  .about-info .lang-and-tools .orange {
+    font-size: 1.6rem;
   }
   ul.menu-nav, div.menu-branding {
     width: 100%;
