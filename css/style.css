@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 
@@ -91,7 +90,6 @@ a {
 }
 
 .menu-nav {
-  font-family: 'Fredoka One', cursive;
   margin: 0;
   padding: 0;
   background: rgba(0, 100, 100, 0.9);
@@ -101,6 +99,12 @@ a {
   -webkit-transition: all 0.4s ease-out;
   transition: all 0.4s ease-out;
 }
+
+.menu-nav .nav-item a {
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+} 
 .menu-nav.show {
   -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0);
@@ -221,7 +225,7 @@ main.welcome-section h1 {
 .main-footer {
   font-family: 'Barlow Condensed', sans-serif;
   text-align: center;
-  color: rgba(0, 0, 0, 0.7);
+  color: silver;
   padding: 1rem;
   height: 60px;
   bottom: 0;
@@ -285,7 +289,9 @@ main.welcome-section h1 {
 
 
 /***** CONTACT ME PAGE *****/
-
+.contact-info {
+  font-family: 'Rubik', sans-serif;
+} 
 /***** END OF CONTACT ME PAGE *****/
 
 
@@ -301,10 +307,10 @@ main.welcome-section h1 {
   main .lg-heading {
     line-height: 1;
     margin-bottom: 1rem;
-    font-size: 2.3rem;
+    font-size: 2.2rem;
   }
   main .sm-heading {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .about-info .bio h5 {
     font-size: 1rem;
@@ -327,6 +333,9 @@ main.welcome-section h1 {
             transform: translate3d(-100%, 0, 0);
     font-size: 20px;
   }
+  .menu-nav .nav-item a {
+    font-size: 1.4rem;
+  } 
   .menu-branding {
     height: 30vh;
     -webkit-transform: translate3d(100%, 0, 0);
