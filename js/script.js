@@ -32,3 +32,17 @@ function toggleMenu() {
     showMenu = false;
   }
 }
+
+
+// PRELOADING ICON
+var myVar;
+
+function myLoader() {
+  myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+// END OF PRELOADING ICON

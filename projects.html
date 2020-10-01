@@ -15,54 +15,58 @@
   
     <title>John-FrontEndDeveloper</title>
   </head>
-<body>
-  <header class="menu-section">
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
-
-    <nav id="navbar" class="menu">
-      <div class="menu-branding">
-        <div class="portrait text-center">
-          <img src="img/me5.jpg" alt="Display picture" class="rounded">
-        </div>
+<body onload="myLoader()" style="margin:0;">
+  <!-- LOADER -->
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
+  
+    <header class="menu-section">
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">About Me</a>
-        </li>
-        <li class="nav-item active">
-          <a href="projects.html" class="nav-link">My Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <main id="projects">
-    <h1 class="lg-heading text-light">My
-      <span class="orange">Projects</span>
-    </h1>
+      <nav id="navbar" class="menu">
+        <div class="menu-branding">
+          <div class="portrait text-center">
+            <img src="img/me5.jpg" alt="Display picture" class="rounded">
+          </div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item active">
+            <a href="projects.html" class="nav-link">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Me</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <h2 class="sm-heading mt-5">
-        View the repos, some of my work
-        <a href="https://github.com/johnphealipto?tab=repositories" target="_blank" class="text-secondary">
-          <i class="fas fa-external-link-alt"></i> HERE 
-        </a>
-      </h2>
-  </main>
+    <main id="projects">
+      <h1 class="lg-heading text-light">My
+        <span class="orange">Projects</span>
+      </h1>
+
+        <h2 class="sm-heading mt-5">
+          View the repos, some of my work
+          <a href="https://github.com/johnphealipto?tab=repositories" target="_blank" class="text-secondary">
+            <i class="fas fa-external-link-alt"></i> HERE 
+          </a>
+        </h2>
+    </main>
 
     <footer class="main-footer">
       Copyright &copy; 2020 
     </footer>
-  </main>
+  </div>
 
 
 

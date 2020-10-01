@@ -15,60 +15,65 @@
   
     <title>John-FrontEndDeveloper</title>
   </head>
-<body>
-  <header class="menu-section">
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
+<body onload="myLoader()" style="margin:0;">
+  <!-- LOADER -->
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
-    <nav id="navbar" class="menu">
-      <div class="menu-branding">
-        <div class="portrait text-center">
-          <img src="img/me5.jpg" alt="Display picture" class="rounded">
-        </div>
+    <!-- MAIN CONTENT -->
+    <header class="menu-section">
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item active">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item">
-          <a href="about.html" class="nav-link">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link">My Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="welcome-section">
-    <h1 class="lg-heading text-light">John
-      <span class="orange">Adibe</span>
-    </h1>
-    <h2 class="sm-heading">Junior Front End Web Developer</h2>
-    <div class="icons">
-      <a href="https://github.com/johnphealipto" target="_blank" id="profile-link">
-        <i class="fab fa-github fa-2x"></i>
-      </a>
-      <a href="https://twitter.com/johnphealipto" target="_blank" id="profile-link1">
-        <i class="fab fa-twitter fa-2x"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/john-adibe-444007192/" target="_blank" id="profile-link3">
-        <i class="fab fa-linkedin fa-2x"></i>
-      </a>
-    </div>
-  </main>
+      <nav id="navbar" class="menu">
+        <div class="menu-branding">
+          <div class="portrait text-center">
+            <img src="img/me5.jpg" alt="Display picture" class="rounded">
+          </div>
+        </div>
+        <ul class="menu-nav">
+          <li class="nav-item active">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Me</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="welcome-section" style="text-align: center;">
+      <h1 class="lg-heading text-light">John
+        <span class="orange">Adibe</span>
+      </h1>
+      <h2 class="sm-heading">Junior Front End Web Developer</h2>
+      <div class="icons">
+        <a href="https://github.com/johnphealipto" target="_blank" id="profile-link">
+          <i class="fab fa-github fa-2x"></i>
+        </a>
+        <a href="https://twitter.com/johnphealipto" target="_blank" id="profile-link1">
+          <i class="fab fa-twitter fa-2x"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/john-adibe-444007192/" target="_blank" id="profile-link3">
+          <i class="fab fa-linkedin fa-2x"></i>
+        </a>
+      </div>
+    </main>
 
     <footer class="main-footer">
       Copyright &copy; 2020 
     </footer>
-  </main>
-
+  </div>
+  
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

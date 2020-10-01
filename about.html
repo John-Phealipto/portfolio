@@ -15,94 +15,98 @@
   
     <title>John-FrontEndDeveloper</title>
   </head>
-<body>
-  <header class="menu-section">
-    <div class="menu-btn">
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-      <div class="btn-line"></div>
-    </div>
+<body onload="myLoader()" style="margin:0;">
+  <!-- LOADER -->
+  <div id="loader"></div>
+  <div style="display:none;" id="myDiv" class="animate-bottom">
 
-    <nav id="navbar" class="menu">
-      <div class="menu-branding">
-        <div class="portrait text-center">
-          <img src="img/me5.jpg" alt="Display picture" class="rounded">
-        </div>
+    <!-- MAIN CONTENT -->
+    <header class="menu-section">
+      <div class="menu-btn">
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
+        <div class="btn-line"></div>
       </div>
-      <ul class="menu-nav">
-        <li class="nav-item">
-          <a href="index.html" class="nav-link">Home</a>
-        </li>
-        <li class="nav-item active">
-          <a href="about.html" class="nav-link">About Me</a>
-        </li>
-        <li class="nav-item">
-          <a href="projects.html" class="nav-link">My Projects</a>
-        </li>
-        <li class="nav-item">
-          <a href="contact.html" class="nav-link">Contact Me</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
 
-  <main class="about-section">
-    <h1 class="lg-heading">About
-      <span class="orange">Me</span>
-    </h1>
-    <h2 class="sm-heading">Nice to meet you!</h2>
-    <div class="about-info">
-      <div class="bioimage"></div>
-      <div class="resume">
-        <a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=9431e55ca3&attid=0.1&permmsgid=msg-a:r6658752049898734326&th=174a8b632377aaa9&view=att&disp=inline&realattid=f_kfab2hzu0&saddbat=ANGjdJ_Jx0K9SAKGqklTPkw6zkGNXygRiOni8hs7TVJvZKx-TfxVDEM39xUxN2c6CVYeQrjNIy0OYPG1tSV40cfji29F7wHNUTfbpGJZmew-7TluTggyX0BzVEqhJv7c-AjlY_zIgv2mqEBSrXK6_eIFlPVdCoNwjp1nImgou2zklR4DALni2igKQzk2l2L5FIkzDhWcD8BUv_djT9kZSyr5uIhBERpgU7TZpYMuAFypzsP0qd_CH7SZC1Eo8mPlCxKGTFC57xwy7GR36xKYhZcA7oTT79WeI8B-VuqVI3tSsZOc3R571ABhvc8yed0djseEUsIdxL-43ONKeJgPvZywc7KqCA8Di4pkKSLZhOsvgSTUdQmE8wWvMjghYftMQqmNnJrAE7Ro9oXmcRNgVmzvnzNA5LzFXoESWT5c5A7D3bzDY8MpErtJpPOQ2Lil6jFxhMS8hKqwsK9OklG30-aacRkbQomcrGHfCoOwU4FIk7fafafdx7RWHK7b6elCEFLlhP88jOikInJ_hFTeFba_svKOujq3o_JA5Sbd1WyH5h-EnCbkiSirYFGTACLB1RfBEaQEOjjKsRYbh1QYB5ysCz-gTv4kqWoVpVt76zU4TrCCbvjdbpgjBg9cHmhbCaXvTlNpRbC_lRbs5eBz3q3iaagqgoxlPWDa5vlnsY0dM3KrbD8YQy9nGKLuSrg" target="_blank">My Resume <i class="fas fa-file"></i></a>
-      </div>
-      <div class="bio">
-        <h5>My name is <span class="orange">John Adibe</span>. I studied at the University of Nigeria, Nsukka and completed my Bachelor's Degree in Mathematics Education in 2017 and I have worked for secondary schools as a Mathematics tutor for several years before coming to Lagos State. I now feel that it is time to realise my dream of working in the IT industry.
-        </h5>
-        <h5 class="pt-3">I completed a self-funded course in front end web development with a training platform called COURSERA in March 2020. I've completed several projects and still counting. <em>Other than coffee, birthing ideas to life through code and seeing it improve lives and productivity of users is what excites me the most about being a software developer.</em></h5>
-        <h5 class="pt-3">I am a highly effective and committed individual with strong problem solving Mathematic abilities, combining good organisational skills and computer languages. With my technical experience and a natural flair for creativity and a keen eye for detail, I crave for an opportunity to advance my career.</h5>
-      </div>
-      <div class="lang-and-tools lang">
-        <h3><span class="orange">Technical Skills</h3><hr>
-        <div class="techSkill pb-4">
-          <div>
-            <i class="fab fa-html5 fa-3x"></i><br>HTML5
-          </div>
-          <div>
-            <i class="fab fa-css3-alt fa-3x"></i><br>CSS
-          </div>
-          <div>
-            Bootstrap
-          </div>
-          <div>
-            <i class="fab fa-js-square fa-3x"></i><br>JavaScript
-          </div>
-          <div>
-            jQuery
-          </div>
-          <div>
-            <i class="fab fa-react fa-3x"></i><br>React
+      <nav id="navbar" class="menu">
+        <div class="menu-branding">
+          <div class="portrait text-center">
+            <img src="img/me5.jpg" alt="Display picture" class="rounded">
           </div>
         </div>
-        
-      </div>
-      <div class="lang-and-tools tools">
-        <h3><span class="orange">Technical Tools</h3><hr>
-        <ul style="list-style: none; padding: 0;">
-          <li>Sublime Text and VS Code for my text editor.</li><hr>
-          <li>GitHub for version control.</li><hr>
-          <li>CLI <em>Windows Powershell</em>, for navigating and installing packages.</li><hr>
-          <li>Figma for prototyping and sketching.</li><hr>
-          <li>...and of course Google for when I don't know stuff.</li>
+        <ul class="menu-nav">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a href="about.html" class="nav-link">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="projects.html" class="nav-link">My Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="contact.html" class="nav-link">Contact Me</a>
+          </li>
         </ul>
-      </div>
-    </div>
-  </main>
+      </nav>
+    </header>
 
-    <footer class="main-footer">
-     Copyright &copy; 2020 
-    </footer>
-  </main>
+    <main class="about-section">
+      <h1 class="lg-heading">About
+        <span class="orange">Me</span>
+      </h1>
+      <h2 class="sm-heading">Nice to meet you!</h2>
+      <div class="about-info">
+        <div class="bioimage"></div>
+        <div class="resume">
+          <a href="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=9431e55ca3&attid=0.1&permmsgid=msg-a:r6658752049898734326&th=174a8b632377aaa9&view=att&disp=inline&realattid=f_kfab2hzu0&saddbat=ANGjdJ_Jx0K9SAKGqklTPkw6zkGNXygRiOni8hs7TVJvZKx-TfxVDEM39xUxN2c6CVYeQrjNIy0OYPG1tSV40cfji29F7wHNUTfbpGJZmew-7TluTggyX0BzVEqhJv7c-AjlY_zIgv2mqEBSrXK6_eIFlPVdCoNwjp1nImgou2zklR4DALni2igKQzk2l2L5FIkzDhWcD8BUv_djT9kZSyr5uIhBERpgU7TZpYMuAFypzsP0qd_CH7SZC1Eo8mPlCxKGTFC57xwy7GR36xKYhZcA7oTT79WeI8B-VuqVI3tSsZOc3R571ABhvc8yed0djseEUsIdxL-43ONKeJgPvZywc7KqCA8Di4pkKSLZhOsvgSTUdQmE8wWvMjghYftMQqmNnJrAE7Ro9oXmcRNgVmzvnzNA5LzFXoESWT5c5A7D3bzDY8MpErtJpPOQ2Lil6jFxhMS8hKqwsK9OklG30-aacRkbQomcrGHfCoOwU4FIk7fafafdx7RWHK7b6elCEFLlhP88jOikInJ_hFTeFba_svKOujq3o_JA5Sbd1WyH5h-EnCbkiSirYFGTACLB1RfBEaQEOjjKsRYbh1QYB5ysCz-gTv4kqWoVpVt76zU4TrCCbvjdbpgjBg9cHmhbCaXvTlNpRbC_lRbs5eBz3q3iaagqgoxlPWDa5vlnsY0dM3KrbD8YQy9nGKLuSrg" target="_blank">My Resume <i class="fas fa-file"></i></a>
+        </div>
+        <div class="bio">
+          <h5>My name is <span class="orange">John Adibe</span>. I studied at the University of Nigeria, Nsukka and completed my Bachelor's Degree in Mathematics Education in 2017 and I have worked for secondary schools as a Mathematics tutor for several years before coming to Lagos State. I now feel that it is time to realise my dream of working in the IT industry.</h5>
+          <h5 class="pt-3">I completed a self-funded course in front end web development with a training platform called COURSERA in March 2020. I've completed several projects and still counting. <em>Other than coffee, birthing ideas to life through code and seeing it improve lives and productivity of users is what excites me the most about being a software developer.</em></h5>
+          <h5 class="pt-3">I am a highly effective and committed individual with strong problem solving Mathematic abilities, combining good organisational skills and computer languages. With my technical experience and a natural flair for creativity and a keen eye for detail, I crave for an opportunity to advance my career.</h5>
+        </div>
+        <div class="lang-and-tools lang">
+          <h3><span class="orange">Technical Skills</h3><hr>
+          <div class="techSkill pb-4">
+            <div>
+              <i class="fab fa-html5 fa-3x"></i><br>HTML5
+            </div>
+            <div>
+              <i class="fab fa-css3-alt fa-3x"></i><br>CSS
+            </div>
+            <div>
+              Bootstrap
+            </div>
+            <div>
+              <i class="fab fa-js-square fa-3x"></i><br>JavaScript
+            </div>
+            <div>
+              jQuery
+            </div>
+            <div>
+              <i class="fab fa-react fa-3x"></i><br>React
+            </div>
+          </div>
+        </div>
+        <div class="lang-and-tools tools">
+          <h3><span class="orange">Technical Tools</h3><hr>
+          <ul style="list-style: none; padding: 0;">
+            <li>Sublime Text and VS Code for my text editor.</li><hr>
+            <li>GitHub for version control.</li><hr>
+            <li>CLI <em>Windows Powershell</em>, for navigating and installing packages.</li><hr>
+            <li>Figma for prototyping and sketching.</li><hr>
+            <li>...and of course Google for when I don't know stuff.</li>
+          </ul>
+        </div>
+      </div>
+    </main>
+
+      <footer class="main-footer">
+        Copyright &copy; 2020 
+      </footer>
+    </main>
+  </div>
 
 
 
