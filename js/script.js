@@ -35,14 +35,14 @@ function toggleMenu() {
 
 
 // PRELOADING ICON
-var myVar;
+// var myVar;
 
-function myLoader() {
-  myVar = setTimeout(showPage, 2000);
-}
+// function myLoader() {
+//   myVar = setTimeout(showPage, 2000);
+// }
 
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
+// function showPage() {
+//   document.getElementById("loader").style.display = "none";
+//   document.getElementById("myDiv").style.display = "block";
+// }
 // END OF PRELOADING ICON
